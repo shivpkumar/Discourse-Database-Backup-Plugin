@@ -1,5 +1,5 @@
 module Jobs
-  class DatabaseBackupJob < Jobs::Scheduled
+  class DatabaseBackupJob < ::Jobs::Scheduled
     daily at: 4.hours
     sidekiq_options retry: false
 
